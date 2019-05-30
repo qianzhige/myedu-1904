@@ -65,9 +65,39 @@ def list_order_by():
     qlist.sort(reverse=True)
     print(qlist)
 
+def list_distinct():
+    vlist = [1,2,2,6,6,4,5]
+    # set(vlist) : 使用set 方法对 list进行去重,去重后不是list类型,用list() 方法 将这个数据转换成list类型
+    vlist = set(vlist)
+    print(vlist)
+    vlist = list(set(vlist))
+    print(vlist)
+
+    # len(): 获取列表的长度,有几个元素 就返回几
+    print(len(vlist))
+
+# 题: 新建一个list变量,里面有五个元素,访问索引2,切片访问索引1到4,删除索引3,添加两个元素,第0位元素改成字符5,获取索引长度
+def home_work():
+    alist = [1,2,3,4,5]
+    print(alist[2])
+    print(alist[1:4])
+    alist.pop(3)
+    alist.append(6)
+    alist.append(7)
+    # blist = [6,7]
+    # alist.extend(blist)
+    alist[0]='5'
+    print(len(alist))
+    print(alist)
+
+
+
+
 if __name__ == '__main__':
-    list_sel()
-    list_del()
-    list_add()
-    list_update()
-    list_order_by()
+    # list_sel()
+    # list_del()
+    # list_add()
+    # list_update()
+    # list_order_by()
+    # list_distinct()
+    home_work()
