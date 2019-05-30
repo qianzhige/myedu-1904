@@ -45,5 +45,5 @@ if __name__ == '__main__':
     print(a[:3:-1])
 
 
-
+    list
 
