@@ -4,7 +4,7 @@ if __name__ == '__main__':
     b = False
     print(type(a))
 
-    # 复数类型 complex  实数和虚数
+    # 复数类型 complex  实数 和 虚数代表小写j
     acomplex = 1 + 2j
     print(acomplex)
     print(type(acomplex))

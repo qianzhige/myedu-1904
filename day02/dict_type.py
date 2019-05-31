@@ -31,7 +31,7 @@ def dict_add():
 
     # 合并方式二: 将 adict 和 bdict 合并,新生成一个dict
     cdict = {"password":"77777","class":"1904"}
-    # 注意第二个字典参数前 要加 **
+    # 注意第二个字典参数前 要加 **   #如果字组的话在前面加一个 *
     ddict = dict(adict,**cdict)
     print(ddict)
 
