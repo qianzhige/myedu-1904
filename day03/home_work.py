@@ -20,10 +20,11 @@ def jiujiu():
         print('')
 
 def jiujiu1():
-    for a in range(1,10):
-        for b in range(1,a+1):
-            print('%s*%s =%s'%(b,a,b*a),end='   ')
+    for i in range(1,10):
+        for j in range(1,i+1):
+            print('%s*%s=%s'%(j,i,j*i),end=' ')
         print('')
+
 
 
 # 求两个数之间的偶数和

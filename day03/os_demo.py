@@ -8,7 +8,6 @@ if __name__ == '__main__':
     # 获取上级目录的字符串
     a = os.path.abspath('..')
     print(a)
-
     # 获取上级目录的字符串
     b = os.path.abspath('../..')
     print(b)
