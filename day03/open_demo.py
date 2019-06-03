@@ -11,7 +11,7 @@ def open_write():
 def open_write1():
     # open(文件地址文件名, 打开方式)
     # a+ : 写入时追加内容
-    text_io = open('../test.text', 'a+')
+    text_io = open('../test.text', 'a+') #C:/ C盘的话
     for i in range(5):
         text_io.write('哈哈哈\n')
 
@@ -22,6 +22,7 @@ def open_read():
     # print(text_io.readlines())
 
     # readline() 读取一行
+    print(text_io.readline())
     print(text_io.readline())
 
 if __name__ == '__main__':
