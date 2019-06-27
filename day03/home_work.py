@@ -79,7 +79,64 @@ def jidan2():
             continue
         print(i)
 
+# 冒泡排序
+def paixu():
+    alist=[3,2,1,5,4,9,6,7,8]
+    # 外循环 len - 1 :  因为 两两比较 ,比如有10个数 我需要比较 9轮
+    # 内循环: len - i -1 : 因为 两两比较 ,比如有10个数 我需要比较 9次, 第二遍的时候 只需要比较 8次,
+    # 每一轮都少一次,因为每轮 都会放一个数在后面
+
+    #             if alist[j] > alist[j+1]:     判断相邻两个数 要不要换位置
+
+    #             temp = alist[j]
+    #             alist[j] = alist[j+1]     将相邻两个数 换位置
+    #             alist[j+1] = temp
+    for i in range(len(alist)-1):
+        for j in range(len(alist)-i-1):
+            if alist[j] > alist[j+1]:
+                temp = alist[j]
+                alist[j] = alist[j + 1]
+                alist[j + 1] = temp
+
+    print(alist)
+
+def distenct():
+    # list去重
+    alist = [3, 2, 1, 5, 4, 4,5]
+    blist= []
+    for i in alist:
+        if i not in blist:
+            blist.append(i)
+    print(blist)
+
+    # 去重方式 2
+    s = set(alist)
+    print(s)
+
+# list 转字典 , 索引作为key , 索引对应的值 作为 value
+def list2dict():
+    alist = [3, 2, 1, 5, 4, 4, 5]
+    adict={}
+    for i in range(len(alist)):
+        adict[i] = alist[i]
+
+    print(adict)
+
+#判断质数/素数
+def iszhishu(num):
+    for i in range(2,int(num/2)+1):
+        if num%i == 0:
+            print('不是质数')
+            return False
+        print('是质数')
+        return True
+
+
+
 if __name__ == '__main__':
     # sum_demo()
     # jiujiu()
     jiujiu1()
+    # paixu()
+    # list2dict()
+    iszhishu(32)
