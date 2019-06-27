@@ -1,0 +1,25 @@
+#用代码读取配置文件  #yaml(读:压卖尔)应用# 要先安装 pip install pyyaml
+
+url: 192.168.60.132:8080
+
+namelist:
+  - bob
+  - rose
+  - jack
+
+
+house:
+  family:
+    name: Doe
+    parents:
+      - John
+      - Jane
+    children:
+      - Paul
+      - Mark
+      - Simone
+  address:
+    number: 34
+    street: Main Street
+    city: Nowheretown
+    zipcode: 12345
