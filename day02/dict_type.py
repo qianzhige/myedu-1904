@@ -66,10 +66,27 @@ def dict_works():
     cdict = dict(adict, **bdict)
     print(cdict)
 
+
+#老师的做法
+def hw():
+    adict = {'username': '卡见风使舵', "password": "123456"}
+    print(adict['username'])
+    adict.pop('username')
+    adict['age']=222
+    adict['age']=333
+    bdict ={"pwd":"77777",'class':'1904'}
+    adict.update(bdict)
+    print(adict)
+# 2种方法
+    d = dict(adict,**bdict)
+    print(d)
+
+
 if __name__ == '__main__':
     # dict_sel()
     # dict_updat()
     # dict_del()
     # dict_add()
     # dict_zhuanhuan()
-    dict_works()
+    # dict_works()
+    hw()
