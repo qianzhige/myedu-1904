@@ -5,6 +5,12 @@ def sum_demo():
         if i % 2  == 1:
             sum = sum + i
     print(sum)
+#求 1到100之间的和
+def sum_he():
+    sum=0
+    for i in range(1,101):
+        sum = sum + i
+    print(sum)
 
 # 打印九九乘法表
 def jiujiu():
@@ -132,7 +138,6 @@ def iszhishu(num):
         return True
 
 
-
 if __name__ == '__main__':
     # sum_demo()
     # jiujiu()
@@ -140,3 +145,4 @@ if __name__ == '__main__':
     # paixu()
     # list2dict()
     iszhishu(32)
+    sum_he()
